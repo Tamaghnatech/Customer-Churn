@@ -1,6 +1,10 @@
-# 📊 Customer Churn Analysis – EDA & Hypothesis Testing
+<h1 align="center">📊 Customer Churn Analysis – EDA & Hypothesis Testing</h1>
 
-An in-depth Exploratory Data Analysis project on customer churn behavior, powered by Python and statistical testing techniques. This project was completed as part of the **IBM Advanced Data Science Capstone** on Coursera.
+<p align="center">
+  <img src="banner.png" alt="Customer Churn Banner" width="80%">
+</p>
+
+<p align="center"><em>IBM Advanced Data Science Capstone Project | Hypothesis Testing & Insights</em></p>
 
 > 💡 Goal: Extract actionable insights, validate business hypotheses, and evaluate customer behavior patterns using rigorous data science techniques.
 
