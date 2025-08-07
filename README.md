@@ -67,15 +67,15 @@ The submission was **auto-graded using AI Mark**, and evaluation was based on co
 
 | Plot | Description |
 |------|-------------|
-| ![](./download%20(96).png) | KDE & Histogram of Total Spend |
-| ![](./download%20(97).png) | Violin Plot of Tenure by Subscription |
-| ![](./download%20(98).png) | Box Plot: Spend by Churn |
-| ![](./download%20(99).png) | Count Plot of Subscription Type |
-| ![](./download%20(100).png) | Contract Type Distribution |
-| ![](./download%20-%202025-08-07T065411.508.png) | Heatmap Correlation Matrix |
-| ![](./download%20-%202025-08-07T070106.741.png) | Grouped Bar: Churn by Subscription |
-| ![](./download%20-%202025-08-07T070435.722.png) | Violin Plot of Spend by Contract |
-| ![](./download%20-%202025-08-07T070935.995.png) | Chi-Square Plot: Subscription vs Churn |
+| ![](./download%20(96).png) |
+| ![](./download%20(97).png) | 
+| ![](./download%20(98).png) | 
+| ![](./download%20(99).png) | 
+| ![](./download%20(100).png) | 
+| ![](./download%20-%202025-08-07T065411.508.png) | 
+| ![](./download%20-%202025-08-07T070106.741.png) | 
+| ![](./download%20-%202025-08-07T070435.722.png) | 
+| ![](./download%20-%202025-08-07T070935.995.png) | 
 
 > 💡 All plots were generated using `seaborn`, `matplotlib`, and `pandas` in Google Colab.
 
