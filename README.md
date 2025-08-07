@@ -1,152 +1,124 @@
-# 📊 Customer Churn Analysis — Exploratory Data Analysis (EDA) & Hypothesis Testing
+# 📊 Customer Churn Analysis – EDA & Hypothesis Testing
 
-![Churn Analysis Banner](banner.png)
+An in-depth Exploratory Data Analysis project on customer churn behavior, powered by Python and statistical testing techniques. This project was completed as part of the **IBM Advanced Data Science Capstone** on Coursera.
 
-## 🧠 Project Overview
-
-This project was developed as part of the final assignment for the **IBM Machine Learning with Python** Coursera specialization. It is a comprehensive demonstration of how to:
-
-* Explore a real-world dataset
-* Perform advanced EDA
-* Formulate hypotheses
-* Conduct hypothesis testing
-* Derive actionable insights for business decision-making
-
-Our analysis focuses on understanding **customer churn behavior** using statistical and visual techniques, paving the way for churn prediction models in future phases.
+> 💡 Goal: Extract actionable insights, validate business hypotheses, and evaluate customer behavior patterns using rigorous data science techniques.
 
 ---
 
-## 🧾 IBM Project Brief
+## 🧠 Project Origin – IBM Capstone Summary
 
-**Objective:** Apply analytical and data science skills to explore a dataset, conduct hypothesis testing, and prepare it for machine learning.
+This project was assigned as the **final practice module** in the IBM Advanced Data Science Specialization. The aim was to:
+- Demonstrate EDA and hypothesis testing skills.
+- Work with real-world business datasets.
+- Communicate data-driven findings effectively.
 
-You must:
-
-* Analyze and summarize a dataset
-* Clean and visualize it
-* Identify key patterns and formulate hypotheses
-* Perform at least one hypothesis test
-* Report the findings in a professional and insightful manner
-
-Your submission is graded on:
-
-* Dataset summary
-* EDA quality
-* Data cleaning/feature engineering
-* Key findings
-* Hypothesis formulation and significance testing
+The submission was **auto-graded using AI Mark**, and evaluation was based on completeness, insightfulness, statistical validity, and presentation.
 
 ---
 
-## 📦 Dataset Details
+## 📁 Dataset Summary
 
-* **Name:** `customer_churn_dataset-testing-master.csv`
-* **Source:** Provided in the IBM ML course
-* **Type:** Tabular data (CSV format)
-* **Rows:** \~45,000
-* **Columns:**
-
-  * Customer ID, Gender, Age, Tenure, Subscription Type, Contract Length
-  * Support Calls, Payment Delay, Usage Frequency, Total Spend, Churn
+- **File:** `customer_churn_dataset-testing-master.csv`
+- **Source:** Provided as part of the IBM Capstone Course
+- **Size:** ~50,000 records
+- **Key Fields:**
+  - `Churn` (0 = No churn, 1 = Churn)
+  - `Subscription Type`, `Contract`, `Tenure`, `Total Spend`, `Support Calls`, etc.
 
 ---
 
-## 🔍 Analysis Highlights
+## 🔍 Project Workflow
 
-### 📑 1. Dataset Summary
-
-* Overview of column types, missing values, and unique counts
-* Target variable: `Churn`
-
-### 🧭 2. Data Exploration Plan
-
-* Focused on spending behavior, customer engagement, and churn status
-* Analyzed how churn varies across subscription types, contracts, and usage patterns
-
-### 📊 3. Exploratory Data Analysis (EDA)
-
-* Correlation heatmap between numerical features
-* Violin plots & KDEs for distribution analysis
-* Grouped bar plots by `Contract` and `Subscription Type`
-
-### 🧹 4. Data Cleaning & Feature Engineering
-
-* Handled missing values and invalid entries
-* Encoded categorical variables
-* Created new features like `Avg Spend per Month`
-
-### 💡 5. Key Findings
-
-* Total Spend and Tenure are highly correlated
-* Customers with longer contracts tend to churn less
-* Churn rates don’t significantly vary across Subscription types (confirmed via Chi-Square test)
-
-### 🧪 6. Hypotheses Tested
-
-1. **ANOVA:** Does Contract Length affect Total Spend?
-
-   * ✅ Significant (p < 0.001)
-2. **T-Test:** Do churned customers make more support calls?
-
-   * ❌ Not significant (p = 0.158)
-3. **Chi-Square:** Does Subscription Type affect Churn?
-
-   * ❌ Not significant (p = 0.829)
-
-### ✅ 7. Conclusion
-
-* Statistically validated findings support that **contract length impacts spend and churn**.
-* Support calls and subscription types have **no strong association** with churn.
+| Step | Task |
+|------|------|
+| ✅ 1. **Dataset Summary** | Overview of variables, nulls, and distributions |
+| ✅ 2. **Exploration Plan** | Vision for what insights to explore and why |
+| ✅ 3. **EDA** | Univariate, bivariate, and multivariate analyses |
+| ✅ 4. **Data Cleaning & Feature Engineering** | Null handling, type correction |
+| ✅ 5. **Key Findings** | Synthesized insights from all analysis |
+| ✅ 6. **Hypothesis Formulation** | Defined 3 hypotheses from business logic |
+| ✅ 7. **Hypothesis Testing** | ANOVA, T-test, Chi-square, p-values |
+| ✅ 8. **Conclusion & Next Steps** | Actionable recommendations |
 
 ---
 
-## 🛠️ Tech Stack
+## 📌 Key Insights
 
-* Python (Pandas, NumPy, SciPy, Seaborn, Matplotlib)
-* Google Colab
-* Jupyter Notebook
-
----
-
-## 🖼️ Visual Gallery
-
-All plots saved in the `images/` folder. Includes:
-
-* 📈 Heatmap of Correlation
-* 🪄 KDE & Violin Plots by Contract
-* 📊 Bar plots of grouped means
-* 🧱 Chi-square stacked bars
+- 🔹 **Tenure** and **Total Spend** are strongly positively correlated.
+- 🔹 Customers with **longer contracts** tend to spend more.
+- 🔹 No statistically significant difference in support calls across churn outcomes.
+- 🔹 **Subscription Type** is not associated with churn (Chi-Square test).
+- 🔹 **Contract Length** does significantly affect spending (ANOVA test).
 
 ---
 
-## 💾 Run This Project
+## 🧪 Hypothesis Testing Results
+
+| Hypothesis | Test | P-Value | Result |
+|------------|------|---------|--------|
+| Spend differs by Contract Type | ANOVA | 0.0000 | ✅ Significant |
+| Support Calls affect Churn | T-Test | 0.1589 | ❌ Not Significant |
+| Churn depends on Subscription Type | Chi-Square | 0.8294 | ❌ Not Significant |
+
+---
+
+## 🖼️ Screenshot Gallery
+
+| Plot | Description |
+|------|-------------|
+| ![](./download%20(96).png) | KDE & Histogram of Total Spend |
+| ![](./download%20(97).png) | Violin Plot of Tenure by Subscription |
+| ![](./download%20(98).png) | Box Plot: Spend by Churn |
+| ![](./download%20(99).png) | Count Plot of Subscription Type |
+| ![](./download%20(100).png) | Contract Type Distribution |
+| ![](./download%20-%202025-08-07T065411.508.png) | Heatmap Correlation Matrix |
+| ![](./download%20-%202025-08-07T070106.741.png) | Grouped Bar: Churn by Subscription |
+| ![](./download%20-%202025-08-07T070435.722.png) | Violin Plot of Spend by Contract |
+| ![](./download%20-%202025-08-07T070935.995.png) | Chi-Square Plot: Subscription vs Churn |
+
+> 💡 All plots were generated using `seaborn`, `matplotlib`, and `pandas` in Google Colab.
+
+---
+
+## ⚙️ Tools & Libraries Used
+
+- **Python 3.11**
+- **Google Colab**
+- **pandas, seaborn, matplotlib**
+- **scipy.stats, statsmodels**
+- **plotly (optional)**
+
+---
+
+## 🔧 Setup Instructions
 
 ```bash
-# Clone the repo
-$ git clone https://github.com/yourusername/customer-churn-eda-ml.git
+pip install pandas numpy matplotlib seaborn scipy statsmodels
+````
 
-# Open the notebook in Colab
-https://colab.research.google.com/github/yourusername/customer-churn-eda-ml/blob/main/Final_Project_EDA.ipynb
-```
+Run the notebook on [Google Colab](https://colab.research.google.com/) and upload the dataset to `/content`.
 
 ---
 
-## 📌 Future Work
+## ✅ Project Outcome
 
-* Feature selection & model training (Logistic Regression, XGBoost)
-* SHAP explainability and churn probability dashboard (Gradio/Streamlit)
+This project reflects a structured, analytical, and statistically validated EDA pipeline — from raw CSV to conclusive business recommendations. It meets all the objectives outlined by the IBM Capstone and is ideal for inclusion in any data science portfolio.
 
 ---
 
-## 👨‍💻 Author
+## 📎 Credits
+
+* 🎓 IBM Applied Data Science Capstone (Coursera)
+* 📈 Dataset Source: IBM (via project materials)
+* 💻 Execution: Python + Google Colab + Matplotlib/Seaborn
+
+---
+
+## 🧠 Author
 
 **Tamaghna Nag**
-
-* ML Engineer | AI Innovator | NovalQ Founder
-* 🔗 [Portfolio](https://tamaghnatech.in) | [GitHub](https://github.com/Tamaghnatech) | [LinkedIn](https://www.linkedin.com/in/tamaghna99/)
+🔗 [Portfolio](https://tamaghnatech.in) | [LinkedIn](https://www.linkedin.com/in/tamaghna99) | [GitHub](https://github.com/Tamaghnatech)
 
 ---
 
-## 📜 License
-
-MIT License
