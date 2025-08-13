@@ -1,11 +1,11 @@
-# <img src="IBM Logo.png" alt="IBM Logo" width="120"/> IBM ML Course — Exploratory Data Analysis for Machine Learning
-<p align="center">
-  <img src="exploratory-data-analysis-for-machine-learning.png" alt="IBM EDA ML Badge" width="200"/>
-  <img src="certificate.png" alt="IBM EDA ML Certificate" width="500"/>
-</p>
+# <img src="IBM%20Logo.png" alt="IBM Logo" width="40"/> IBM ML Course 1 — Exploratory Data Analysis for Machine Learning
 
-Multi-step exploratory data analysis for machine learning, focusing on statistical summaries, data visualization, feature relationships, and hypothesis testing.  
-Built using Python (Pandas, Matplotlib, Seaborn) in Google Colab, as part of IBM’s Data Science curriculum on Coursera.
+![Certificate](certificate.png)
+![Badge](exploratory-data-analysis-for-machine-learning.png)
+
+Exploratory Data Analysis (EDA) for machine learning, focusing on statistical summaries, visualization, feature correlation, and hypothesis testing.  
+Built in Google Colab using Python (Pandas, Matplotlib, Seaborn) as part of the IBM Data Science curriculum on Coursera.
+
 
 
 
