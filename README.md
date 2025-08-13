@@ -1,10 +1,16 @@
-<h1 align="center">📊 Customer Churn Analysis – EDA & Hypothesis Testing</h1>
-
+# 🧠 IBM ML Course — Exploratory Data Analysis for Machine Learning
 <p align="center">
-  <img src="banner.png" alt="Customer Churn Banner" width="80%">
+  <img src="exploratory-data-analysis-for-machine-learning.png" alt="IBM EDA ML Badge" width="200"/>
+  <img src="certificate.png" alt="IBM EDA ML Certificate" width="500"/>
 </p>
 
-<p align="center"><em>IBM Advanced Data Science Capstone Project | Hypothesis Testing & Insights</em></p>
+Multi-step exploratory data analysis for machine learning, focusing on statistical summaries, data visualization, feature relationships, and hypothesis testing.  
+Built using Python (Pandas, Matplotlib, Seaborn) in Google Colab, as part of IBM’s Data Science curriculum on Coursera.
+
+<p align="center">
+  <img src="IBM Logo.png" alt="IBM Logo" width="120"/>
+</p>
+
 
 > 💡 Goal: Extract actionable insights, validate business hypotheses, and evaluate customer behavior patterns using rigorous data science techniques.
 
