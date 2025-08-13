@@ -1,8 +1,4 @@
-<p align="left">
-  <img src="IBM Logo.png" alt="IBM Logo" width="120"/>
-</p>
-
-# 🧠 IBM ML Course — Exploratory Data Analysis for Machine Learning
+# <img src="IBM Logo.png" alt="IBM Logo" width="120"/> IBM ML Course — Exploratory Data Analysis for Machine Learning
 <p align="center">
   <img src="exploratory-data-analysis-for-machine-learning.png" alt="IBM EDA ML Badge" width="200"/>
   <img src="certificate.png" alt="IBM EDA ML Certificate" width="500"/>
